@@ -1,0 +1,26 @@
+﻿<!-- Views/Shared/_Layout.cshtml -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <!-- Các thẻ meta, CSS, JavaScript cần thiết -->
+</head>
+<body>
+    <div id="header">
+        <!-- Header của trang -->
+    </div>
+
+    <div id="menu">
+        <!-- Đặt partial view danh mục menu ở đây -->
+        @Html.Partial("_MenuPartial")
+    </div>
+
+    <div id="content">
+        @RenderBody()
+    </div>
+
+    <div id="footer">
+        <!-- Footer của trang -->
+    </div>
+</body>
+</html>
